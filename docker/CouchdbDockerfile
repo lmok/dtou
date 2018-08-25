@@ -2,6 +2,7 @@
 # - straightforward modification of init file
 FROM couchdb:1.7.1
 
+# - see https://github.com/pouchdb/add-cors-to-couchdb
 RUN sed -i '/;socket_options/a enable_cors = true' /usr/local/etc/couchdb/local.ini && \
     echo '[cors]\n\
  origins = *\n\
