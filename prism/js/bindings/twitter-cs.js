@@ -232,10 +232,10 @@ angular.module('dtouprism').controller('twittercs', ($scope) => {
                         if(augmenting.size == 0) res2();
                     },
                     // - convenience methods for finding our and our peers' tweets
-                    findMine = () => {
+                    findMine = function() {
                         return $(this).data('screen-name') === profile.screenName;
                     },
-                    findOthers = () => {
+                    findOthers = function() {
                         return $(this).data('screen-name') != profile.screenName &&
                             $(this).find('.js-tweet-text-container').text().indexOf(token) >= 0;
                     };

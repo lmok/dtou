@@ -26,7 +26,6 @@
         "lib/bluebird/js/browser/bluebird.min.js",
         "lib/angular/angular.min.js",
         "js/dtou.js",
-        "js/dtou_handlers/twitter.js",
         "js/bindings/twitter-cs.js"
       ]
     }
